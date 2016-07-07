@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8CB71C14-85EF-4E5B-B7A9-4537999AA7BC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>HuskyModMenu</RootNamespace>
+    <ProjectName>Husky Mod Menu</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.asi</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalOptions>lib\ScriptHookV.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <MapExports>false</MapExports>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Bypass.h" />
+    <ClInclude Include="format.h" />
+    <ClInclude Include="Functions\OnlineFunctions.h" />
+    <ClInclude Include="Functions\PlayerFunctions.h" />
+    <ClInclude Include="Functions\VehicleFunctions.h" />
+    <ClInclude Include="Functions\WeaponFunctions.h" />
+    <ClInclude Include="Functions\WorldFunctions.h" />
+    <ClInclude Include="Functions\UIFunctions.h" />
+    <ClInclude Include="Hashes.h" />
+    <ClInclude Include="keyboard.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="Functions\MenuFunctions.h" />
+    <ClInclude Include="MenuRow.h" />
+    <ClInclude Include="Pattern.h" />
+    <ClInclude Include="script.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="vehicleValues.h" />
+    <ClInclude Include="XorString.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="format.cpp" />
+    <ClCompile Include="Functions\OnlineFunctions.cpp" />
+    <ClCompile Include="Functions\PlayerFunctions.cpp" />
+    <ClCompile Include="Functions\VehicleFunctions.cpp" />
+    <ClCompile Include="Functions\WeaponFunctions.cpp" />
+    <ClCompile Include="Functions\WorldFunctions.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Functions\UIFunctions.cpp" />
+    <ClCompile Include="keyboard.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="Functions\MenuFunctions.cpp" />
+    <ClCompile Include="MenuRow.cpp" />
+    <ClCompile Include="script.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

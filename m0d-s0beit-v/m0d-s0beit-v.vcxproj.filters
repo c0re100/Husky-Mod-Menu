@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{1e63be8b-1e2b-4137-a624-0d24c4fda826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{54878bc4-fbbd-4542-9aa3-650121949dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Script">
+      <UniqueIdentifier>{a6c2bb6b-2e6d-4036-9b55-2407476c2ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Functions">
+      <UniqueIdentifier>{421507cd-0f52-448c-b8a9-5814b6876def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Functions">
+      <UniqueIdentifier>{a87d131b-8a96-4d06-9487-35fbe8cc54df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="script.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Pattern.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Hashes.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="vehicleValues.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\UIFunctions.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\PlayerFunctions.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\VehicleFunctions.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\WeaponFunctions.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\WorldFunctions.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\MenuFunctions.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuRow.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="format.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="XorString.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\OnlineFunctions.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Bypass.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\UIFunctions.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\PlayerFunctions.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\VehicleFunctions.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\WeaponFunctions.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\WorldFunctions.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\MenuFunctions.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuRow.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="format.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="keyboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\OnlineFunctions.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
