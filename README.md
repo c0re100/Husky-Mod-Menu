@@ -16,8 +16,4 @@ Alexander Blade - ScriptHookV SDK
 
 s0biet/gir489 - m0d s0beit v Redux
 
-<<<<<<< HEAD
 DatBrick - Brick Menu Base
-=======
-DatBrick - Brick Menu Base
->>>>>>> 0b3caa78f8d64f3045bf48c0bf74247f195630d9
